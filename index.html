@@ -10,44 +10,63 @@
     <title> Star Wars</title>
 </head>
 <body>
-    <div id='wrap'>
-        <div id="main-container" class="container">
+    <!-- <div id='wrap'> -->
+    <div id="main-container" class="container">
         <div class='container main-section'>
-            
-            <div class='row' >
-                <div class='col-md-12 text-center'>
-                    <div id='lightGuys'></div>
-                </div>
-            </div>
             <div class='row'>
-                <div class='col'></div>
                 <div class='col-md-8'>
-                        <h1 class='text-center'>Choose your Character!</h1>
+                    <div class='row'>
+                        <div class='col-md-12 text-center' id='lightHolder'>
+                            <div id='lightGuys'></div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col'></div>
+                        <div class='col-md-8 text-center' id='lightText'>
+                                <!-- <h1 >Choose your Character!</h1> -->
+                        </div>
+                        <div class='col'></div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-12 text-center' id='darkHolder'>
+                            <div id='darkGuys'></div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col'></div>
+                        <div class='col-md-8 text-center' id='darkText'>
+                                <!-- <h1 >Choose your Character!</h1> -->
+                        </div>
+                        <div class='col'></div>
+                    </div>
                 </div>
-                <div class='col'></div>
-            </div>
-            <div class='row'>
-                <div class='col-md-12 text-center'>
-                    <div id='darkGuys'></div>
+                <div class='col-md-4'>
+                    <img src='assets/images/StarWarsLogo.jpg'>
                 </div>
             </div>
-            
 
                     
                     
-            </div>
         </div>
     </div>
+    <!-- </div> -->
     <footer class='footer'>
         <div class='container'>    
             <div class='row'>
                 <div class='col-md-6'>
-                    <div id='lightArena' class='img-fluid float-left'></div>
-                </div>
-                <div class='col-md-6'>
-                    <div id='darkArena' class='img-fluid float-right'></div>
+                    <div id='turnOptions'></div>
                 </div>
             </div>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div id='lightArena' class='float-left'></div>
+                    <!-- <div id='turnOptions'></div> -->
+                </div>
+                <div class='col-md-6'>
+                    <div id='darkArena' class='float-right'></div>
+                </div>
+            </div>
+
         </div>
     </footer>
     
@@ -58,6 +77,8 @@
 </html>
 <!-- pseudocode
     i should set an id on button click
+    maybe instead of immediately removing divs, changr border color to show selection
+    then have a confirm button that sends them down
     8bit art
     make bootstrap grid layout
     possibly choose light or dark mode and choose from there 
